@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.eclipse.hudson.plugins</groupId>
     <artifactId>hudson-plugin-parent</artifactId>
-    <version>3.0.0-SNAPSHOT</version>
+    <version>3.0.0-M2-1</version>
     <relativePath />
   </parent>
   
@@ -13,25 +13,26 @@
   <version>0.7.11-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
-  <name>Jenkins Violations plugin</name>
-  <url>wiki.jenkins-ci.org/display/JENKINS/Violations</url>
+  <name>Violations plugin</name>
+  <url>https://wiki.hudson-ci.org/display/HUDSON/Violations+Plugin</url>
 
   <scm>
-    <connection>scm:git:git://github.com/hudson-plugins/${project.artifactId}-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:hudson-plugins/${project.artifactId}-plugin.git</developerConnection>
-    <url>https://github.com/hudson-plugins/${project.artifactId}-plugin</url>
+    <connection>scm:git:git://github.com/hudson3-plugins/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:hudson3-plugins/${project.artifactId}-plugin.git</developerConnection>
+    <url>https://github.com/hudson3-plugins/${project.artifactId}-plugin</url>
   </scm>
 
   <properties>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <hudsonTags>recommended,report</hudsonTags>
   </properties>
 
-  <!--issueManagement>
+  <issueManagement>
     <system>JIRA</system>
-    <url>http://issues.jenkins-ci.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+JENKINS+AND+status+in+%28Open%2C+%22In+Progress%22%2C+Reopened%29+AND+component+%3D+%27violations%27</url>
-  </issueManagement-->
+    <url>http://issues.hudson-ci.org</url>
+  </issueManagement>
 
   <developers>
     <developer>
