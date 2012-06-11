@@ -10,7 +10,7 @@
   
   <groupId>org.hudsonci.plugins</groupId>
   <artifactId>violations</artifactId>
-  <version>0.7.11-SNAPSHOT</version>
+  <version>0.7.11</version>
   <packaging>hpi</packaging>
 
   <name>Violations plugin</name>
