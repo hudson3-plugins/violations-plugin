@@ -260,7 +260,11 @@ public abstract class AbstractViolationsBuildAction
         final LineAndShapeRenderer renderer
             = (LineAndShapeRenderer) plot.getRenderer();
         renderer.setStroke(new BasicStroke(2.0f));
-        ColorPalette.apply(renderer);
+        // avoid conflict with ColorPalette.apply(renderer) in hudson core
+        int n = 0;
+        for (Color c : ColorPalette.LINE_GRAPH) {
+          renderer.setSeriesPaint(n, c);
+        }
 
         // crop extra space around the graph
         plot.setInsets(new RectangleInsets(PADDING, 0, 0, PADDING));
